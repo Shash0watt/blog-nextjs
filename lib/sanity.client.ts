@@ -16,7 +16,7 @@ export function getClient(preview?: { token: string }): SanityClient {
     dataset,
     apiVersion,
     useCdn,
-    perspective: 'published',
+    perspective: 'previewDrafts',
   })
   if (preview) {
     if (!preview.token) {
