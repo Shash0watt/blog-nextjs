@@ -30,10 +30,10 @@ export function getClient(preview?: { token: string }): SanityClient {
     })
   }
   return client.withConfig({
-    token: preview.token,
+    // token: preview.token,
     useCdn: true,
     ignoreBrowserTokenWarning: true,
-    perspective: 'previewDrafts',
+    perspective: 'published',
   })
   return client
 }
