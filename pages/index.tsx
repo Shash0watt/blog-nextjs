@@ -6,6 +6,8 @@ import { Post, Settings } from 'lib/sanity.queries'
 import { GetStaticProps } from 'next'
 import type { SharedPageProps } from 'pages/_app'
 
+export const revalidate = 60 
+
 interface PageProps extends SharedPageProps {
   posts: Post[]
   settings: Settings

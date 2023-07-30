@@ -10,6 +10,8 @@ import {
 } from 'lib/sanity.queries'
 import { createClient, type SanityClient } from 'next-sanity'
 
+export const revalidate = 60 
+
 export function getClient(preview?: { token: string }): SanityClient {
   const client = createClient({
     projectId,

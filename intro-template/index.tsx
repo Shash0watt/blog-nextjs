@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { memo, useEffect, useState } from 'react'
 
 import cover from './cover.png'
+export const revalidate = 60 
 
 export default memo(function IntroTemplate() {
   const [studioURL, setStudioURL] = useState(null)
