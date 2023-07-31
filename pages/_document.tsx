@@ -1,6 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 
-export const revalidate = 60 // revalidate this page every 60 seconds
 
 export default function Document() {
   return (
@@ -13,3 +12,4 @@ export default function Document() {
     </Html>
   )
 }
+export const revalidate = 60 // revalidate this page every 60 seconds

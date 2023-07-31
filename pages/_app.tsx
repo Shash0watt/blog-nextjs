@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css'
 
 import { AppProps } from 'next/app'
 import { lazy } from 'react'
-export const revalidate = 60 
+
 
 export interface SharedPageProps {
   draftMode: boolean
@@ -28,3 +28,5 @@ export default function App({
     </>
   )
 }
+
+export const revalidate = 60 // revalidate this page every 60 seconds

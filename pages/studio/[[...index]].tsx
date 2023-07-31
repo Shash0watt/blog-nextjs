@@ -3,7 +3,6 @@ import { NextStudio } from 'next-sanity/studio'
 import { metadata } from 'next-sanity/studio/metadata'
 import config from 'sanity.config'
 
-export const revalidate = 60 // revalidate this page every 60 seconds
 
 export default function StudioPage() {
   return (
@@ -17,3 +16,4 @@ export default function StudioPage() {
     </>
   )
 }
+export const revalidate = 60 // revalidate this page every 60 seconds
