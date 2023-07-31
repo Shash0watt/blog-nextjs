@@ -11,6 +11,8 @@ import { Post, Settings } from 'lib/sanity.queries'
 import { GetStaticProps } from 'next'
 import type { SharedPageProps } from 'pages/_app'
 
+export const revalidate = 60 // revalidate this page every 60 seconds
+
 interface PageProps extends SharedPageProps {
   post: Post
   morePosts: Post[]
